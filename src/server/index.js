@@ -24,8 +24,7 @@ app.get('/', function (req, res) {
 
 // designates what port the app will listen to for incoming requests
 app.listen(8082, function () {
-  console.log('Example app listening on port 8081!');
-  console.log(`Your API key is ${process.env.API_KEY}`);
+  console.log('Example app listening on port 8082!');
 });
 
 app.get('/test', function (req, res) {
@@ -53,7 +52,6 @@ app.post('/meaningCloudData', (req, res) => {
       irony: data.irony
     }
    res.send(requestedData)
-   console.log(requestedData)
   })
 
 });
